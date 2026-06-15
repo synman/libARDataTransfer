@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 
 android {
+    namespace 'com.parrot.arsdk.ardatatransfer'
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
@@ -18,7 +19,7 @@ android {
 }
 
 dependencies {
-    compile project(':libARDiscovery')
-    compile project(':libARSAL')
-    compile project(':libARUtils')
+    api project(':libARDiscovery')
+    api project(':libARSAL')
+    api project(':libARUtils')
 }
